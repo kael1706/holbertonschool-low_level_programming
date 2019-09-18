@@ -6,9 +6,9 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-    char msj1 [] = "\"Programming is like building a multilingual puzzle";
-    puts (msj1);
-    return 0;
+char msj1[] = "\"Programming is like building a multilingual puzzle";
+puts(msj1);
+return (0);
 }
