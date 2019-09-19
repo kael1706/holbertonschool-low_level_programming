@@ -13,7 +13,7 @@ for (letters = '0' ; letters <= '9' ; letters++)
 {
 putchar(letters);
 }
-for (letters = 'a' ; letters <= 'z' ; letters++)
+for (letters = 'a' ; letters <= 'f' ; letters++)
 {
 putchar(letters);
 }
