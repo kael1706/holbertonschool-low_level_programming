@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,6 +7,8 @@
  */
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 62);
+char TemporalMsg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+setenv("GlobalTemporalMsg", TemporalMsg, 1);
+system("echo $GlobalTemporalMsg");
 return (1);
 }
