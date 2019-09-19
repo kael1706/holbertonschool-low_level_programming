@@ -7,12 +7,6 @@
  */
 int main(void)
 {
-/*
-*char TemporalMsg[] = and that piece of art is useful\" - Dor
-*a Korpar, 2015-10-19;
-*setenv("GlobalTemporalMsg", TemporalMsg, 1);
-*system("echo $GlobalTemporalMsg");
-*/
 iSaid();
 return (1);
 }
