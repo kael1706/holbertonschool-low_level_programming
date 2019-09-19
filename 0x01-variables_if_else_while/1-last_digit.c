@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 1 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -26,5 +26,5 @@ else if (lastDigitNumber > 5)
 {
 printf("Last digit of %d is %d and is greater than 5\n", n, lastDigitNumber);
 }
-return (1);
+return (0);
 }
