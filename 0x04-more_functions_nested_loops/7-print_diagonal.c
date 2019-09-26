@@ -23,7 +23,7 @@ void print_diagonal(int n)
 
 	while (j < i)
 	{
-	putchar(spaces);
+	_putchar(spaces);
 	j++;
 	}
 	_putchar(diagonal);
