@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
 *print_square - print square of n*n
 *@size: size of square
@@ -25,4 +26,3 @@ void print_square(int size)
 		}
 	}
 }
-
