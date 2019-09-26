@@ -12,7 +12,7 @@ void more_numbers(void)
 
 	while (j < 10)
 	{
-		for (i = 0; i < 21; i++)
+		for (i = 0; i < 20; i++)
 		{
 			_putchar(hola[i]);
 		}
