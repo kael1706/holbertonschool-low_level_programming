@@ -9,11 +9,12 @@ int main(void)
 {
 	unsigned long  num = 612852475143;
 	long divisor = 1;
+	unsigned long answer;
 
 	do {
 		if (num % divisor == 0)
 		{
-			printf("%ld", divisor);
+		answer = divisor + 0;
 		}
 		divisor++;
 	} while (divisor <= 2);
