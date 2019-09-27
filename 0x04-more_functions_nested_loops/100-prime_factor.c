@@ -7,8 +7,8 @@
 */
 int main(void)
 {
-	unsigned long long  num = 612852475143;
-	long divisor = 1, divisores = 0;
+	unsigned long  num = 612852475143;
+	long divisor = 1;
 
 	do {
 		if (num % divisor == 0)
