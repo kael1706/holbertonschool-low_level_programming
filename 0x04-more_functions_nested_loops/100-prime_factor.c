@@ -18,7 +18,7 @@ int main(void)
 		}
 		divisor++;
 	} while (divisor <= 2);
-	printf("%ld", divisor);
+	printf("%ld", answer);
 	putchar('\n');
 
 	return (0);
