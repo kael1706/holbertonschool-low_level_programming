@@ -40,7 +40,7 @@ else if (s[j] == '}')
 	changue = 0;
 else
 	changue = changue + 1;
-if ( changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
+if (changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
 	s[j] = s[j] - 32;
 }
   return (s);
