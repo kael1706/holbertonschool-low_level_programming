@@ -8,40 +8,45 @@
 */
 char *cap_string(char *s)
 {
-int j;
-int changue = 0;
-for (j = 0; s[j] != 0; j++)
-{
-if (s[j] == ' ')
-	changue = 0;
-else if (s[j] == '\t')
-	changue = 0;
-else if (s[j] == '\n')
-	changue = 0;
-else if (s[j] == ',')
-	changue = 0;
-else if (s[j] == ';')
-	changue = 0;
-else if (s[j] == '.')
-	changue = 0;
-else if (s[j] == '!')
-	changue = 0;
-else if (s[j] == '?')
-	changue = 0;
-else if (s[j] == '"')
-	changue = 0;
-else if (s[j] == '(')
-	changue = 0;
-else if (s[j] == ')')
-	changue = 0;
-else if (s[j] == '{')
-	changue = 0;
-else if (s[j] == '}')
-	changue = 0;
-else
-	changue = changue + 1;
-if (changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
-	s[j] = s[j] - 32;
+	int j;
+	int changue = 0;
+
+	for (j = 0; s[j] != 0; j++)
+	{
+		status();
+		if (changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
+			s[j] = s[j] - 32;
+	}
+	return (s);
 }
-  return (s);
+void status(void)
+{
+	if (s[j] == ' ')
+		changue = 0;
+	else if (s[j] == '\t')
+		changue = 0;
+	else if (s[j] == '\n')
+		changue = 0;
+	else if (s[j] == ',')
+		changue = 0;
+	else if (s[j] == ';')
+		changue = 0;
+	else if (s[j] == '.')
+		changue = 0;
+	else if (s[j] == '!')
+		changue = 0;
+	else if (s[j] == '?')
+		changue = 0;
+	else if (s[j] == '"')
+		changue = 0;
+	else if (s[j] == '(')
+		changue = 0;
+	else if (s[j] == ')')
+		changue = 0;
+	else if (s[j] == '{')
+		changue = 0;
+	else if (s[j] == '}')
+		changue = 0;
+	else
+		changue = changue + 1;
 }
