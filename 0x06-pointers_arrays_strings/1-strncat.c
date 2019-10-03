@@ -5,6 +5,7 @@
 * @dest: array 1
 * @src: array 2
 * @n: copy limit (bytes)
+*
 * Description: the information in array2
 * is add to array1
 * Return: pointer
