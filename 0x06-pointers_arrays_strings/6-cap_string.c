@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -8,7 +9,7 @@
 */
 char *cap_string(char *s)
 {
-	int j, i;
+	int j;
 	int changue = 0;
 
 	for (j = 0; s[j] != 0; j++)
@@ -25,7 +26,6 @@ char *cap_string(char *s)
 		changue = changue + 1;
 	if (changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
 		s[j] = s[j] - 32;
-		printf("%c\n", s[j]);
 	}
 	return (s);
 }
