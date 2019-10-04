@@ -7,7 +7,7 @@
 *
 *Return: int
 */
-void status(char *s, int changue)
+int status(char *s, int changue, int j)
 {
 	if (s[j] == ' ')
 		changue = 0;
@@ -53,7 +53,7 @@ char *cap_string(char *s)
 
 	for (j = 0; s[j] != 0; j++)
 	{
-		status(s, changue);
+		status(s, changue, j);
 		if (changue == 1 && (s[j] >= 'a' && s[j] <= 'z'))
 			s[j] = s[j] - 32;
 	}
