@@ -5,26 +5,24 @@
 * @s: txt
 * Return: coded txt
 */
-
 char *rot13(char *s)
 {
-	char key[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char msj[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-	int y = 0;
+	char key1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char key2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i;
+	int j;
 
-	while (s[i] != 0)
+
+	for (i = 0; s[i] != 0; i++)
 	{
-		while (msj[y] != 0)
+	for (j = 0; key1[j] != 0; j++)
 	{
-		if (s[i] == msj[y])
-		{
-			s[i] = key[y];
-			break;
-		}
-		y++;
+		if (s[i] == key1[j])
+	{
+		s[i] = key2[j];
+		break;
 	}
-	i++;
+	}
 	}
 	return (s);
 }
