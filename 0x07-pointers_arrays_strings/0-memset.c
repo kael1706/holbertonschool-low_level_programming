@@ -1,4 +1,6 @@
-/**
+#include "holberton.h"
+
+ /**
  * _memset - fill memory .
  * @s: pointer
  * @b: hexadecimal number
