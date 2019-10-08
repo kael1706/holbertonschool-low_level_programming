@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
-   * print_diagsums - sum of the two diagonals
-    * @a: array
-     * @size: size
-      */
+* print_diagsums - sum of the two diagonals
+* @a: array
+* @size: size
+*/
 void print_diagsums(int *a, int size)
 {
 	int n1 = 0;
