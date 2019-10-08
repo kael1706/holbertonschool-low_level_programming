@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*trchr - print match
+*_strchr - print match
 *@s: array
 *@c: char
 *
@@ -10,6 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+
 	while (s[i] != 0)
 	{
 		if (s[i] == c)
