@@ -9,17 +9,20 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-int r, m;
+	while (*haystack != '\0')
+	{
+		char *duplicate = haystack;
 
-for (m = 0 ; needle[m] != '\0'; m++)
-{
-for (r = 0 ; haystack[r] != '\0'; r++)
-{
-if (haystack[r] == needle[m])
-{
-return (haystack + r);
-}
-}
-}
-return (0);
+		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
+		{
+			haystack++;
+			needle++;
+		}
+		if (!*needle != '\0')
+		{
+			return (duplicate);
+		}
+		haystack = duplicate + 1;
+	}
+	return (0);
 }
