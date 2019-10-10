@@ -4,6 +4,7 @@
 *_strlen_recursion - know length
 *@s: char
 *
+*Return: size
 */
 int _strlen_recursion(char *s)
 {
