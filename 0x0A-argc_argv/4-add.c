@@ -32,23 +32,24 @@ int main(int argc, char *argv[])
 {
 	unsigned int r = 0;
 	int i = 1;
-
-	if (argc < 1)
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	while (i < argc)
+	while (i < argc )
 	{
-		if (_isdigit(*argv[i]) == 1)
+		int j = 0;
+		while (argv[i][j])
 		{
-			r = r + atoi(argv[i]);
+			if (_isdigit(argv[i][j]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		r = r + atoi(argv[i]);
 		i++;
 	}
 	printf("%d\n", r);
