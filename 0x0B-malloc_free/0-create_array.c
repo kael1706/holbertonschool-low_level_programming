@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdlib.h>
 
 /**
 *create_array - create a array with dynamic size
@@ -9,7 +9,7 @@
 */
 char *create_array(unsigned int size, char c)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *tmpArray;
 	int fail = 0;
 
