@@ -27,26 +27,26 @@ void free_gridk(int **grid, int height)
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int **array;
+	int **grid;
 
 	if (height <= 0 || width <= 0)
 		return (NULL);
 
-	array = (int **) malloc(sizeof(int *) * height);
+	grid = (int **) malloc(sizeof(int *) * height);
 
-	if (array == NULL)
+	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		array[i] = malloc(sizeof(int) * width);
-		if (array[i] == NULL)
+		grid[i] = malloc(sizeof(int) * width);
+		if (grid[i] == NULL)
 			return (NULL);
 	}
 	/*free_gridk(array, height);*/
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
-			array[i][j] = 0;
+			grid[i][j] = 0;
 	}
-	return (array);
+	return (grid);
 }
