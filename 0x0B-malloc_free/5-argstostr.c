@@ -1,9 +1,10 @@
 #include <stdlib.h>
 
 /**
-*_strlen_recursion - know length
+*_strlen_recursionk - know length
 *@s: char
 *
+*Return: size of string
 */
 int _strlen_recursionk(char *s)
 {
@@ -18,10 +19,10 @@ int _strlen_recursionk(char *s)
 }
 
 /**
-* argstostr - concatenates all the arguments given
-* @ac: number of arguments
-* @av: arguments
-* Return: pointer to concatenated arguments
+* argstostr - concatenate string
+* @ac: number arguments
+* @av: array of strings
+* Return: pointer
 */
 char *argstostr(int ac, char **av)
 {
