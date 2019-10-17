@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
 * searchSizek - search the size
 * @s: string
@@ -33,9 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	l1 = searchSizek(s1, n, 1);
 	l2 = searchSizek(s2, n, 2);
-	int reservedSize = sizeof(char) * (l1 + l2 + 1);
-
-	newStr = malloc(reservedSize);
+	newStr = malloc(sizeof(char) * (l1 + l2 + 1));
 	if (newStr == NULL)
 	{
 		free(newStr);
