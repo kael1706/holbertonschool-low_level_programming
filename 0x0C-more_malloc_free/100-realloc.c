@@ -37,7 +37,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-	p = malloc(new_size);
+	newP = malloc(new_size);
 	if (newP == NULL)
 		return (NULL);
 	copyPasteK(newP, ptr, new_size);
