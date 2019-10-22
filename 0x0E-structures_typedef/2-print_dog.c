@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include<stdio.h> 
 /**
 * print_dog - print info of dog
 * @d: address type dog
