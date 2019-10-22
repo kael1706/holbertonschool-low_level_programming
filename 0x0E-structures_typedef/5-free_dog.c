@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
 *free_dog - creates a new object dog
 * @d: release object properties
