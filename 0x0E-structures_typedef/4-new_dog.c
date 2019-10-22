@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
 * _strdupk - return a pointer with copy
 *
