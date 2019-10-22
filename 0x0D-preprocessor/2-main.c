@@ -1,6 +1,6 @@
 #include "holberton.h";
 
-/*
+/**
 *main - print the name of this file
 *
 *return: 0
