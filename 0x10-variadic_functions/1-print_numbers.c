@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
-*print_numbers - add all the arguments
+*print_numbers - print  arguments of numbers
 *@separator: separator between numbers (string)
 *@n: number of past numbers
 *@...: must be integers
