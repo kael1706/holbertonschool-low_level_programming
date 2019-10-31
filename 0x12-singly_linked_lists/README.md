@@ -15,7 +15,7 @@
  - [Data estructure](https://intranet.hbtn.io/rltoken/gb2LD9B9peFEyJ6JKuP6UA) 
 
 ## Command tests ⚙️
- - `$ gcc -Wall -Wextra -Werror -pedantic -Wno-format main.c *.c -o printf `
+ - `$ gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-print_list.c -o executableName`
 
 ## Conclusions📋
  - 
