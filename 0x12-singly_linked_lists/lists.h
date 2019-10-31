@@ -1,5 +1,7 @@
 #ifndef _FL_HOLBERTON_H
 #define _FL_HOLBERTON_H
+#include <string.h>
+#include <stdio.h>
 #include <stddef.h>
 
 /**
