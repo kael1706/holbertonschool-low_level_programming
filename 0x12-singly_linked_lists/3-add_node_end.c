@@ -26,7 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = nodo_next;
 		return (nodo_next);
 	}
-	wwhile ((*lh).next != NULL)
+	while ((*lh).next != NULL)
 	{
 		lh = (*lh).next;
 	}
