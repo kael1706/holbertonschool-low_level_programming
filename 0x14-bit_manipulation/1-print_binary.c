@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 {
 	int nBits = 8;
 	unsigned long int answer = 0, c_binary = 1;
-	
+
 	nBits = (sizeof(n) * 8) - 1;
 	/**
 	  * 10000000000000000000000000000000
