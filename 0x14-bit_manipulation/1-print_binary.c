@@ -7,10 +7,11 @@
 void print_binary(unsigned long int n)
 {
 	int nBits = 8;
+	unsigned long int m = 0;
+	unsigned long int h = 0;
+	int t = 0;
 
 	nBits = sizeof(unsigned long int) * nBits;
-	unsigned long int m = 0, h = 0;
-	int t = 0;
 
 	if (n == 0)
 	{
