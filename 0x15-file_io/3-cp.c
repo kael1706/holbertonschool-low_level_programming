@@ -79,8 +79,7 @@ int main(int argc, char *argv[])
 	fileName2 = argv[2];
 	fD2 = open(fileName2, O_CREAT | O_RDWR | O_TRUNC, 0664);
 	showError_99(fD2, fileName2);
-	bR = read(fD1, buffer, 1024);
-	if (bR > 0)
+	if ((bR = read(fD1, buffer, 1024)) > 0)
 	{
 		showError_98(bR, fileName1);
 		bW = write(fD2, buffer, bR);
