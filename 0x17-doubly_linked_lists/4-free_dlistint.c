@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* free_listint - free a list of type listint_t 
+* free_dlistint - free a list of type listint_t
 * @head: head of the list type listint
 */
 void free_dlistint(dlistint_t *head)
@@ -10,8 +10,8 @@ void free_dlistint(dlistint_t *head)
 
 	while (head != NULL)
 	{
-		h = head;
-		head = (*head).next;
-		free(h);
+		h = (*head).next;
+		free(head);
+		head = h;
 	}
 }
