@@ -1,5 +1,13 @@
 #include "lists.h"
 
+/**
+* insert_dnodeint_at_index - insert item in a numerical linked list
+* @h: head address
+* @idx: position to insert
+* @n: item value
+*
+* Return: NULL | new node address
+*/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int a = 0;
