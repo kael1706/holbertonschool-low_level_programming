@@ -28,6 +28,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	while (head != NULL)
 	{
+		printf("[%d]\n", head->n);
 		a = a + 1;
 		if (idx == a)
 		{

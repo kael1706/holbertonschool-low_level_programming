@@ -24,7 +24,7 @@ int main(void)
 	add_dnodeint_end(&head, 1024);
 	print_dlistint(head);
 	printf("-----------------\n");
-	x = insert_dnodeint_at_index(&head, 0, 4096);
+	x = insert_dnodeint_at_index(&head, 8, 4096);
 	if (x == NULL)
 		printf("%s\n", "insert node fail");
 	print_dlistint(head);
