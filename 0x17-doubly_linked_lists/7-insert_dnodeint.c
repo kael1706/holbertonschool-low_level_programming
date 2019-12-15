@@ -10,35 +10,33 @@
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int a = 0;
-	dlistint_t *head = *h;
-	dlistint_t *n_n = malloc(sizeof(dlistint_t));
+	dlistint_t *n_n;
+	dlistint_t *p_n = *h;
+	dlistint_t *nx_n = *h;
+	unsigned int i;
 
-	if (head == NULL || n_n == NULL)
+	if (h == NULL || (*h == NULL && idx > 0))
 		return (NULL);
-	n_n->n = n;
-	n_n->prev = NULL;
-	n_n->next = NULL;
 	if (idx == 0)
+		return (add_dnodeint(h, n));
+	nx_n = nx_n->next;
+	for (i = 0; i < idx - 1; i++)
 	{
-		n_n->next = *h;
-		(*h)->prev = n_n;
-		*h = n_n;
-		return (n_n);
+		if (p_n->next == NULL)
+			return (NULL);
+		p_n = p_n->next;
+		nx_n = nx_n->next;
 	}
-	while (head != NULL)
-	{
-		printf("[%d]\n", head->n);
-		a = a + 1;
-		if (idx == a)
-		{
-			n_n->prev = head;
-			n_n->next = head->next;
-			head->next = n_n;
-			head->next->prev = n_n;
-			return (n_n);
-		}
-		head = head->next;
-	}
-	return (NULL);
+	if (nx_n == NULL)
+		return (add_dnodeint_end(h, n));
+	n_n = malloc(sizeof(dlistint_t));
+	if (n_n == NULL)
+		return (NULL);
+	(*n_n).n = n;
+	(*n_n).next = p_n->next;
+	(*n_n).prev = p_n;
+	(*p_n).next = n_n;
+	if (n_n != NULL)
+		n_n->prev = n_n;
+	return (n_n);
 }
