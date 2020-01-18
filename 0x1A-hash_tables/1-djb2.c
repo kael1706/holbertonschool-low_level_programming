@@ -1,9 +1,9 @@
 
 /**
 * hash_djb2 - is a hash algoritm
-* @str: keyword
+* @str: keyword that I need to search
 *
-* Return: hash id
+* Return: preprocessed numeric key
 */
 unsigned long int hash_djb2(const unsigned char *str)
 {
