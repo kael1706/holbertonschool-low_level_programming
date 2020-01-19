@@ -1,6 +1,7 @@
 
 /**
-* hash_djb2 - is a hash algoritm
+* hash_djb2 - is a hash algoritm.
+* transform a string into numerical values
 * @str: keyword that I need to search
 *
 * Return: preprocessed numeric key

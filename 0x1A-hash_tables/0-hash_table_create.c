@@ -2,6 +2,7 @@
 
 /**
  * hash_table_create - create a hash table.
+ * in this case a hash table is array of hash_node_t
  * @size: size of the array inside hash table
  * Return: pointer to new hash table
  */

@@ -1,10 +1,14 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - insert item in one cell of hash table
- *@ht: hash table
- *@key: keyword to search the position of the cell
- *@value: value of new node that is in the cell
+ * hash_table_set - append  or overwirte one item (node)
+ * First calculate the position, prepare a new node with
+ * information. Finally overwrite or add depending on the
+ * case.
+ * @ht: hash table
+ * @key: keyword to search the position of the array
+ * and the position in the linked list.
+ * @value: value of the new item (new node) that is in the array
  * Return: 1 | 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -33,6 +37,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(key, n->key) == 0)
 			{
+				/*overwriting procces*/
 				free(n->value);
 				n->value = strdup((char *)value);
 				return (1);
@@ -40,6 +45,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			n = n->next;
 		}
 	}
+	/*add item procces*/
 	n_n->next = ht->array[idx_ht];
 	ht->array[idx_ht] = n_n;
 	return (1);
