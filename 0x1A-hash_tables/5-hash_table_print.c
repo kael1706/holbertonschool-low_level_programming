@@ -10,6 +10,7 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int idx_ht;
 	hash_node_t *n;
 	int status = 0;
+
 	if (ht)
 	{
 		printf("{");
