@@ -7,7 +7,7 @@ Set of programming exercises for academic and professional purposes to help solv
 You can see this repository as a way to remember programming concepts from practical exercises.
 
 Programming languages used:
-- Python
+- C
 
 ## Prerequisites 📋
 
@@ -15,7 +15,7 @@ Programming languages used:
 
 
 ## Content
-|Name|Descrption|
+| Name | Description |
 |---|---|
 |[0x00-hello_world](https://github.com/kael1706/holbertonschool-low_level_programming/tree/master/0x00-hello_world "0x00-hello_world")|..|
 |[0x01-variables_if_else_while](https://github.com/kael1706/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while "0x01-variables_if_else_while")|..|
