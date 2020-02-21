@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+NAME = holberton
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+
+#  builds your executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
