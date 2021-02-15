@@ -4,11 +4,11 @@
 
 ## Description
 
-Set of programming exercises for academic and professional purposes to help solve everyday problems in the world of programming.
+It is a megaproject made up of 26 projects.
 
 You can see this repository as a way to remember programming concepts from practical exercises.
 
-Programming languages used:
+**Programming languages used:**
 - C
 
 ## Prerequisites 📋
@@ -45,4 +45,4 @@ Programming languages used:
 |[0x1A-hash_tables](https://github.com/kael1706/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables "0x1A-hash_tables")|..|
 
 ## Author :copyright:
-* **Carlos Daniel Cortez** - [kael1706](https://github.com/kael1706)
+* **Carlos Daniel Cortez** - [kaelwebdev](https://github.com/kaelwebdev)
